@@ -1,0 +1,416 @@
+@article{tmpRef,
+  author  = {tmp},
+  journal = {tmp},
+  title   = {tmp},
+  year    = {20XX},
+  volume  = {X},
+  number  = {X},
+  pages   = {XXX-XXX}
+}
+
+# 1
+
+# Spot
+@article{spot,
+  title   = {Spot - The Agile Mobile Robot},
+  url={https://bostondynamics.com/products/spot/,(Accessed on Sept. 11th, 2023)}
+}
+
+#  quadruped potential
+@book{carbone2005legged,
+  title={Legged robotic systems},
+  author={Carbone, Giuseppe and Ceccarelli, Marco},
+  year={2005},
+  publisher={INTECH Open Access Publisher}
+}
+
+# MPC
+@INPROCEEDINGS{8593885,
+author={Bledt, Gerardo and Powell, Matthew J. and Katz, Benjamin and Di Carlo, Jared and Wensing, Patrick M. and Kim, Sangbae},
+booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+title={MIT Cheetah 3: Design and Control of a Robust, Dynamic Quadruped Robot},
+year={2018},
+volume={},
+number={},
+pages={2245-2252},
+keywords={Legged locomotion;Actuators;Torque;Force;Knee;Robot sensing systems},
+doi={10.1109/IROS.2018.8593885}}
+
+
+@INPROCEEDINGS{MIT_Cheetah_3,
+author={Di Carlo, Jared and Wensing, Patrick M. and Katz, Benjamin and Bledt, Gerardo and Kim, Sangbae},
+booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+title={Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control},
+year={2018},
+volume={},
+number={},
+pages={1-9},
+doi={10.1109/IROS.2018.8594448}}
+
+@misc{kim2019highly,
+title={Highly Dynamic Quadruped Locomotion via Whole-Body Impulse Control and Model Predictive Control},
+author={Donghyun Kim and Jared Di Carlo and Benjamin Katz and Gerardo Bledt and Sangbae Kim},
+year={2019},
+eprint={1909.06586},
+archivePrefix={arXiv},
+primaryClass={cs.RO}
+}
+
+@ARTICLE{9321699,
+  author={Ding, Yanran and Pandala, Abhishek and Li, Chuanzheng and Shin, Young-Ha and Park, Hae-Won},
+  journal={IEEE Transactions on Robotics}, 
+  title={Representation-Free Model Predictive Control for Dynamic Motions in Quadrupeds}, 
+  year={2021},
+  volume={37},
+  number={4},
+  pages={1154-1171},
+  keywords={Robots;Dynamics;Robot kinematics;Legged locomotion;Quaternions;Predictive control;Mathematical model;Dynamics;legged robots;model predictive control (MPC);underactuated robots},
+  doi={10.1109/TRO.2020.3046415}}
+
+
+
+@misc{sombolestan2021adaptive,
+title={Adaptive Force-based Control for Legged Robots},
+author={Mohsen Sombolestan and Yiyu Chen and Quan Nguyen},
+year={2021},
+eprint={2011.06236},
+archivePrefix={arXiv},
+primaryClass={cs.RO}
+}
+
+# Learning Based
+    # flat
+
+
+
+@misc{tan2018simtoreal,
+      title={Sim-to-Real: Learning Agile Locomotion For Quadruped Robots}, 
+      author={Jie Tan and Tingnan Zhang and Erwin Coumans and Atil Iscen and Yunfei Bai and Danijar Hafner and Steven Bohez and Vincent Vanhoucke},
+      year={2018},
+      eprint={1804.10332},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+
+@article{Hwangbo_2019,
+title={Learning agile and dynamic motor skills for legged robots},
+volume={4},
+ISSN={2470-9476},
+url={http://dx.doi.org/10.1126/scirobotics.aau5872},
+DOI={10.1126/scirobotics.aau5872},
+number={26},
+journal={Science Robotics},
+publisher={American Association for the Advancement of Science (AAAS)},
+author={Hwangbo, Jemin and Lee, Joonho and Dosovitskiy, Alexey and Bellicoso, Dario and Tsounis, Vassilios and Koltun, Vladlen and Hutter, Marco},
+year={2019},
+month=jan }
+
+
+
+
+    # rough
+
+@misc{haarnoja2019learningwalkdeepreinforcement,
+      title={Learning to Walk via Deep Reinforcement Learning}, 
+      author={Tuomas Haarnoja and Sehoon Ha and Aurick Zhou and Jie Tan and George Tucker and Sergey Levine},
+      year={2019},
+      eprint={1812.11103},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/1812.11103}, 
+}
+
+@misc{kumar2021rma,
+title={RMA: Rapid Motor Adaptation for Legged Robots},
+author={Ashish Kumar and Zipeng Fu and Deepak Pathak and Jitendra Malik},
+year={2021},
+eprint={2107.04034},
+archivePrefix={arXiv},
+primaryClass={cs.LG}
+}
+
+@article{challenging_terrain,
+doi={10.1126/scirobotics.abc5986},
+author = {Joonho Lee  and Jemin Hwangbo  and Lorenz Wellhausen  and Vladlen Koltun  and Marco Hutter },
+title = {Learning quadrupedal locomotion over challenging terrain},
+journal = {Science Robotics},
+volume = {5},
+number = {47},
+pages = {eabc5986},
+year = {2020},
+doi = {10.1126/scirobotics.abc5986},
+URL = {https://www.science.org/doi/abs/10.1126/scirobotics.abc5986},
+eprint = {https://www.science.org/doi/pdf/10.1126/scirobotics.abc5986},
+abstract = {A learning-based locomotion controller enables a quadrupedal ANYmal robot to traverse challenging natural environments. Legged locomotion can extend the operational domain of robots to some of the most challenging environments on Earth. However, conventional controllers for legged locomotion are based on elaborate state machines that explicitly trigger the execution of motion primitives and reflexes. These designs have increased in complexity but fallen short of the generality and robustness of animal locomotion. Here, we present a robust controller for blind quadrupedal locomotion in challenging natural environments. Our approach incorporates proprioceptive feedback in locomotion control and demonstrates zero-shot generalization from simulation to natural environments. The controller is trained by reinforcement learning in simulation. The controller is driven by a neural network policy that acts on a stream of proprioceptive signals. The controller retains its robustness under conditions that were never encountered during training: deformable terrains such as mud and snow, dynamic footholds such as rubble, and overground impediments such as thick vegetation and gushing water. The presented work indicates that robust locomotion in natural environments can be achieved by training in simple domains.}}
+@article{Learning_robust_perceptive_locomotion,
+doi = {10.1126/scirobotics.abk2822},
+author = {Takahiro Miki  and Joonho Lee  and Jemin Hwangbo  and Lorenz Wellhausen  and Vladlen Koltun  and Marco Hutter },
+title = {Learning robust perceptive locomotion for quadrupedal robots in the wild},
+journal = {Science Robotics},
+volume = {7},
+number = {62},
+pages = {eabk2822},
+year = {2022},
+doi = {10.1126/scirobotics.abk2822},
+URL = {https://www.science.org/doi/abs/10.1126/scirobotics.abk2822},
+eprint = {https://www.science.org/doi/pdf/10.1126/scirobotics.abk2822},
+abstract = {Legged robots that can operate autonomously in remote and hazardous environments will greatly increase opportunities for exploration into underexplored areas. Exteroceptive perception is crucial for fast and energy-efficient locomotion: Perceiving the terrain before making contact with it enables planning and adaptation of the gait ahead of time to maintain speed and stability. However, using exteroceptive perception robustly for locomotion has remained a grand challenge in robotics. Snow, vegetation, and water visually appear as obstacles on which the robot cannot step or are missing altogether due to high reflectance. In addition, depth perception can degrade due to difficult lighting, dust, fog, reflective or transparent surfaces, sensor occlusion, and more. For this reason, the most robust and general solutions to legged locomotion to date rely solely on proprioception. This severely limits locomotion speed because the robot has to physically feel out the terrain before adapting its gait accordingly. Here, we present a robust and general solution to integrating exteroceptive and proprioceptive perception for legged locomotion. We leverage an attention-based recurrent encoder that integrates proprioceptive and exteroceptive input. The encoder is trained end to end and learns to seamlessly combine the different perception modalities without resorting to heuristics. The result is a legged locomotion controller with high robustness and speed. The controller was tested in a variety of challenging natural and urban environments over multiple seasons and completed an hour-long hike in the Alps in the time recommended for human hikers. A legged locomotion controller achieves high robustness and speed in the wild by combining multimodal information.}}
+
+
+
+@misc{margolis2022walkwaystuningrobot,
+      title={Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior}, 
+      author={Gabriel B Margolis and Pulkit Agrawal},
+      year={2022},
+      eprint={2212.03238},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2212.03238}, 
+}
+
+@INPROCEEDINGS{9982132,
+  author={Bellegarda, Guillaume and Chen, Yiyu and Liu, Zhuochen and Nguyen, Quan},
+  booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={Robust High-Speed Running for Quadruped Robots via Deep Reinforcement Learning}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={10364-10370},
+  keywords={Training;Deep learning;Working environment noise;Reinforcement learning;Aerospace electronics;Hardware;Generators},
+  doi={10.1109/IROS47612.2022.9982132}}
+
+@inproceedings{fu2021minimizing,
+  author    = {Fu, Zipeng and Kumar, Ashish and Malik, Jitendra and Pathak, Deepak},
+  title     = {Minimizing Energy Consumption Leads to the Emergence of Gaits in Legged Robots},
+  booktitle   = {Conference on Robot Learning ({CoRL})},
+  year      = {2021},
+}
+@ARTICLE{10463132,
+  author={Luo, Zeren and Dong, Yinzhao and Li, Xinqi and Huang, Rui and Shu, Zhengjie and Xiao, Erdong and Lu, Peng},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={MorAL: Learning Morphologically Adaptive Locomotion Controller for Quadrupedal Robots on Challenging Terrains}, 
+  year={2024},
+  volume={9},
+  number={5},
+  pages={4019-4026},
+  keywords={Robots;Quadrupedal robots;Morphology;Training;Ethics;Service robots;Task analysis;Deep reinforcement learning;legged robots;self-adaptation},
+  doi={10.1109/LRA.2024.3375086}}
+
+
+
+# imitation
+
+@inproceedings{RoboImitationPeng20,
+author = {Peng, Xue Bin and Coumans, Erwin and Zhang, Tingnan and Lee, Tsang-Wei Edward and Tan, Jie and Levine, Sergey},
+booktitle={Robotics: Science and Systems},
+year = {2020},
+month = {07},
+title = {Learning Agile Robotic Locomotion Skills by Imitating Animals},
+doi = {10.15607/RSS.2020.XVI.064}
+}
+
+# CPG
+
+@article{IJSPEERT2008642,
+title = {Central pattern generators for locomotion control in animals and robots: A review},
+journal = {Neural Networks},
+volume = {21},
+number = {4},
+pages = {642-653},
+year = {2008},
+note = {Robotics and Neuroscience},
+issn = {0893-6080},
+doi = {https://doi.org/10.1016/j.neunet.2008.03.014},
+url = {https://www.sciencedirect.com/science/article/pii/S0893608008000804},
+author = {Auke Jan Ijspeert},
+keywords = {Central pattern generators, Locomotion, Robots, Computational models, Dynamical systems, Neural networks, Systems of coupled oscillators},
+abstract = {The problem of controlling locomotion is an area in which neuroscience and robotics can fruitfully interact. In this article, I will review research carried out on locomotor central pattern generators (CPGs), i.e. neural circuits capable of producing coordinated patterns of high-dimensional rhythmic output signals while receiving only simple, low-dimensional, input signals. The review will first cover neurobiological observations concerning locomotor CPGs and their numerical modelling, with a special focus on vertebrates. It will then cover how CPG models implemented as neural networks or systems of coupled oscillators can be used in robotics for controlling the locomotion of articulated robots. The review also presents how robots can be used as scientific tools to obtain a better understanding of the functioning of biological CPGs. Finally, various methods for designing CPGs to control specific modes of locomotion will be briefly reviewed. In this process, I will discuss different types of CPG models, the pros and cons of using CPGs with robots, and the pros and cons of using robots as scientific tools. Open research topics both in biology and in robotics will also be discussed.}
+}
+
+@article{Owaki1,
+author = {Owaki, Dai and Kano, Takeshi and Nagasawa, Ko and Tero, Atsushi and Ishiguro, Akio},
+year = {2013},
+month = {01},
+pages = {},
+title = {Simple robot suggests physical interlimb communication is essential for quadruped walking},
+volume = {10},
+journal = {Journal of the Royal Society, Interface / the Royal Society},
+doi = {10.1098/rsif.2012.0669}
+}
+
+@article{Owaki2,
+author = {Owaki, Dai and Ishiguro, Akio},
+year = {2017},
+month = {12},
+pages = {},
+title = {A Quadruped Robot Exhibiting Spontaneous Gait Transitions from Walking to Trotting to Galloping},
+volume = {7},
+journal = {Scientific Reports},
+doi = {10.1038/s41598-017-00348-9}
+}
+
+@INPROCEEDINGS{4543306,
+  author={Righetti, Ludovic and Ijspeert, Auke Jan},
+  booktitle={2008 IEEE International Conference on Robotics and Automation}, 
+  title={Pattern generators with sensory feedback for the control of quadruped locomotion}, 
+  year={2008},
+  volume={},
+  number={},
+  pages={819-824},
+  keywords={Feedback;Robot sensing systems;Oscillators;Neurofeedback;Artificial neural networks;Control systems;Biological system modeling;Centralized control;Legged locomotion;Systematics},
+  doi={10.1109/ROBOT.2008.4543306}}
+
+
+#CPG-RL
+
+@misc{bellegarda2022cpgrl,
+      title={CPG-RL: Learning Central Pattern Generators for Quadruped Locomotion}, 
+      author={Guillaume Bellegarda and Auke Ijspeert},
+      year={2022},
+      eprint={2211.00458},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+@INPROCEEDINGS{cpgrl2,
+  author={Shafiee, Milad and Bellegarda, Guillaume and Ijspeert, Auke},
+  booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={Puppeteer and Marionette: Learning Anticipatory Quadrupedal Locomotion Based on Interactions of a Central Pattern Generator and Supraspinal Drive}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1112-1119},
+  keywords={Legged locomotion;Spinal cord;Robot sensing systems;Generators;Energy efficiency;Behavioral sciences;Sensors},
+  doi={10.1109/ICRA48891.2023.10160706}}
+
+@misc{cpgrl3,
+  author={Milad Shafiee, Guillaume Bellegarda and Auke Ijspeert},
+
+  title={DeepTransition: Viability Leads to the Emergence of Gait Transitions in Learning Anticipatory Quadrupedal Locomotion Skills}, 
+
+  year={2023},
+  eprint={2306.07419},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2306.07419}, 
+}
+
+@INPROCEEDINGS{10611128,
+  author={Bellegarda, Guillaume and Shafiee, Milad and Ijspeert, Auke},
+  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={Visual CPG-RL: Learning Central Pattern Generators for Visually-Guided Quadruped Locomotion}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1420-1427},
+  keywords={Couplings;Navigation;Robot kinematics;Robot sensing systems;Robustness;Delays;Sensors},
+  doi={10.1109/ICRA57147.2024.10611128}}
+
+
+
+# ETG-RL
+@ARTICLE{Evolutionary,
+author={Shi, Haojie and Zhou, Bo and Zeng, Hongsheng and Wang, Fan and Dong, Yueqiang and Li, Jiangyong and Wang, Kang and Tian, Hao and Meng, Max Q.-H.},
+journal={IEEE Robotics and Automation Letters},
+title={Reinforcement Learning With Evolutionary Trajectory Generator: A General Approach for Quadrupedal Locomotion},
+year={2022},
+volume={7},
+number={2},
+pages={3085-3092},
+doi={10.1109/LRA.2022.3145495}}
+
+# Supraspinal structures
+
+@article{DREW201525,
+title = {Taking the next step: cortical contributions to the control of locomotion},
+journal = {Current Opinion in Neurobiology},
+volume = {33},
+pages = {25-33},
+year = {2015},
+note = {Motor circuits and action},
+issn = {0959-4388},
+doi = {https://doi.org/10.1016/j.conb.2015.01.011},
+url = {https://www.sciencedirect.com/science/article/pii/S0959438815000203},
+author = {Trevor Drew and Daniel S Marigold},
+abstract = {The planning and execution of both discrete voluntary movements and visually guided locomotion depends on the contribution of multiple cortical areas. In this review, we discuss recent experiments that address the contribution of the posterior parietal cortex (PPC) and the motor cortex to the control of locomotion. The results from these experiments show that the PPC contributes to the planning of locomotion by providing an estimate of the position of an animal with respect to objects in its path. In contrast, the motor cortex contributes primarily to the execution of gait modifications by modulating the activity of groups of synergistic muscles active at different times during the gait cycle.}
+}
+
+@article{Lavoie2004AKA,
+  title={A kinematic and kinetic analysis of locomotion during voluntary gait modification in the cat},
+  author={Sylvain Lavoie and Bradford J. McFadyen and Trevor Drew},
+  journal={Experimental Brain Research},
+  year={2004},
+  volume={106},
+  pages={39-56},
+  url={https://api.semanticscholar.org/CorpusID:2378313}
+}
+
+% 網様体
+@article{doi:10.1152/jn.91013.2008,
+author = {Stapley, Paul J. and Drew, Trevor},
+title = {The Pontomedullary Reticular Formation Contributes to the Compensatory Postural Responses Observed Following Removal of the Support Surface in the Standing Cat},
+journal = {Journal of Neurophysiology},
+volume = {101},
+number = {3},
+pages = {1334-1350},
+year = {2009},
+doi = {10.1152/jn.91013.2008},
+    note ={PMID: 19118108},
+
+URL = { 
+    
+        https://doi.org/10.1152/jn.91013.2008
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1152/jn.91013.2008
+    
+    
+
+}
+,
+    abstract = { This study was designed to determine the contribution of reticular neurons in the pontomedullary reticular formation (PMRF) to the postural responses produced to compensate for an unexpected perturbation. We recorded the activity of 48 neurons in the PMRF, including 41 reticulospinal neurons, to removal of the support surface under each of the four limbs in four cats. The perturbations produced robust postural responses that were divided into three periods: an initial postural response (P1) that displaced the center of vertical pressure over the two diagonal supporting limbs; a secondary response (P2) during which the cat restored a tripedal support pattern; and a prolonged tertiary response (P3) that maintained a stable posture over all three supporting limbs. Most (44/48) reticular neurons showed modified activity to perturbation of at least one limb and a majority (39/48) showed changes in activity to perturbations of more than one limb. A few (7/48) discharged to perturbations of all four limbs. Discharge frequency in neurons showing increased activity during P1 was relatively high (>100 Hz in 57\% of the neurons responding to perturbations of either the left or right forelimbs, lFl and rFL) and of short latency (17 ms for the lFL and 14 ms for the rFL). Discharge activity in most neurons was sustained throughout P2 and P3 but at a reduced level. These data show that neurons in the PMRF discharge strongly in response to unexpected perturbations and in a manner consistent with a contribution to the compensatory responses that restore equilibrium. }
+}
+
+# AI-CPG
+@ARTICLE{10499824,
+  author={Li, Guanda and Ijspeert, Auke and Hayashibe, Mitsuhiro},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={AI-CPG: Adaptive Imitated Central Pattern Generators for Bipedal Locomotion Learned Through Reinforced Reflex Neural Networks}, 
+  year={2024},
+  volume={9},
+  number={6},
+  pages={5190-5197},
+  keywords={Robots;Humanoid robots;Legged locomotion;Robot sensing systems;Training;Neural networks;Generators;Bioinspired robot learning;legged robots;machine learning for robot control},
+  doi={10.1109/LRA.2024.3388842}}
+
+# 2
+    # Mujoco
+@inproceedings{todorov2012mujoco,
+title={MuJoCo: A physics engine for model-based control},
+author={Todorov, Emanuel and Erez, Tom and Tassa, Yuval},
+booktitle={2012 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+pages={5026--5033},
+year={2012},
+organization={IEEE},
+doi={10.1109/IROS.2012.6386109}
+}
+ # SAC
+@article{sac,
+  title={Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor},
+  author={Haarnoja, Tuomas and Zhou, Aurick and Abbeel, Pieter and Levine, Sergey},
+  journal={International Conference on Machine Learning (ICML)},
+  year={2018}
+}
+
+# sim to real
+@article{published_papers/45786058,
+title = {Gait Generation for Quadruped Robots Using Sim-to-Real Transfer},
+author = {Tomonori Yoshida and Kiyoshi Irie and Yoshitaka Hara and Taro Suzuki and Masahiro Tomono},
+journal = {Proceedings of the Japan Robotics Society Annual Conference (CD-ROM)},
+month = {September},
+volume = {40th},
+year = {2022}
+}

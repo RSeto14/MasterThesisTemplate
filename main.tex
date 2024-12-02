@@ -1,0 +1,107 @@
+\documentclass[a4paper,12pt,twoside]{jreport} % A4 用紙，12pt フォント
+
+% =========================== use package ================================== %
+\usepackage[inner=25mm,outer=25mm,top=40mm,bottom=25mm]{geometry} % 余白の設定
+\usepackage{titlesec} % 章タイトルのフォーマット
+\usepackage{fancyhdr} % ヘッダーとフッターの設定
+
+\usepackage[japanese]{babel} % 参考文献の表示を「参考文献」にする
+% ========================================================================== %
+
+
+% ============================ header & footer ============================ %
+\pagestyle{fancy}
+\fancyhf{}
+% 偶数ページの設定
+\fancyhead[LE]{\leftmark} % 左ヘッダに章名
+\fancyhead[CE]{}
+\fancyhead[RE]{}
+\fancyfoot[CE]{\thepage}
+
+% 奇数ページの設定
+\fancyhead[LO]{\rightmark} % 左ヘッダに節名
+\fancyhead[CO]{}
+\fancyhead[RO]{}
+\fancyfoot[CO]{\thepage}
+% ========================================================================== %
+
+
+% ========================================================================== %
+% 章タイトルを中央揃えに設定し、「第1章」の形式にする
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries\centering} % フォントスタイルと中央揃え
+{第\arabic{chapter}章}{20pt}{\Huge}
+% ========================================================================== %
+
+
+% ================================= title ================================== %
+% \title{LaTeXでの文書作成入門ああああ}
+% \author{おなまえたろう}
+% \date{\today}
+% ========================================================================== %
+
+
+% ================================ document ================================ %
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+  
+        {\fontsize{24pt}{24pt}\selectfont  修士学位論文}
+  
+        \vspace{3cm}
+  
+        {\fontsize{20pt}{20pt}\selectfont \textbf{深層強化学習を用いた}}
+
+        \vspace{0.5cm}
+        {\fontsize{20pt}{20pt}\selectfont \textbf{CPGと姿勢安定化方策による}}
+
+        \vspace{0.5cm}
+        {\fontsize{20pt}{20pt}\selectfont \textbf{四脚ロボットの歩行動作生成}}
+
+        \vspace{8cm}
+        {\fontsize{18pt}{18pt}\selectfont 令和6年度} 
+
+        \vspace{0.5cm}
+        {\fontsize{18pt}{18pt}\selectfont (令和7年?月??日 提出)} 
+  
+        \vspace{3cm}
+        {\fontsize{18pt}{18pt}\selectfont 東北大学大学院工学研究科}
+
+        \vspace{0.5cm}
+        {\fontsize{18pt}{18pt}\selectfont ロボティクス専攻}
+  
+  
+        \vspace{1.0cm}
+        {\fontsize{18pt}{18pt}\selectfont 瀬戸 崚生}
+  
+  
+    \end{center}
+  \end{titlepage}
+
+% \maketitle
+
+% 目次
+\setcounter{page}{1}
+\pagenumbering{roman} % ページ番号をローマ数字に設定
+\tableofcontents % 目次を生成
+
+
+
+% 本文
+\pagenumbering{arabic} % ページ番号をアラビア数字に設定
+
+\input{Chapter1/Chapter1.tex}
+% \input{Chapter2/Chapter2.tex}
+% \input{Chapter3/Chapter3.tex}
+% \input{Chapter4/Chapter4.tex}
+% \input{Chapter5/Chapter5.tex}
+
+
+
+% 参考文献
+\bibliographystyle{plain}
+\bibliography{ref}
+
+\end{document}
+% ========================================================================== %
