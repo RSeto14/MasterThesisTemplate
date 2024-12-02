@@ -85,12 +85,12 @@
 \pagenumbering{roman} % ページ番号をローマ数字に設定
 \setcounter{page}{1}
 \tableofcontents % 目次を生成
+\clearpage % これを入れないと目次のページ番号がローマ数字にならない
 
 
 
 % 本文
 \pagenumbering{arabic} % ページ番号をアラビア数字に設定
-
 \input{Chapter1/Chapter1.tex}
 % \input{Chapter2/Chapter2.tex}
 % \input{Chapter3/Chapter3.tex}
