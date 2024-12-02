@@ -1,11 +1,13 @@
 # MasterThesisTemplate
 
 ## compile
+latexmkコマンドを入れるだけ  
 ~~~bash
 latexmk main
 ~~~
 
 ## 現状問題
+※解決したのは取り消し線  
 - ~~余白設定~~  
   今のままだと、なんかtopが詰まる
 - ~~目次のページ番号をローマにしたい~~  
