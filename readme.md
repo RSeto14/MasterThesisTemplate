@@ -1,0 +1,3 @@
+# MasterThesisTemplate
+
+## ルール
