@@ -45,9 +45,13 @@
 % ================================ document ================================ %
 \begin{document}
 
+
+% 表紙pdfの挿入
 \includepdf[pages=-,fitpaper=true]{Other/hyoshi.pdf}
 \cleardoublepage
 
+
+% タイトル
 \begin{titlepage}
     \begin{center}
   
@@ -82,11 +86,13 @@
   
     \end{center}
   \end{titlepage}
+\cleardoublepage
 
-% \maketitle
 
+% 英語アブスト
 \input{Other/abstract} %abstract追加
 \cleardoublepage
+
 
 % 目次
 \pagenumbering{roman} % ページ番号をローマ数字に設定
@@ -104,10 +110,14 @@
 % \input{Chapter5/Chapter5.tex}
 
 
+% 謝辞
+\input{Other/thanks}
+
 
 % 参考文献
 \bibliographystyle{plain}
 \bibliography{ref}
+
 
 \end{document}
 % ========================================================================== %
