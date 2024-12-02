@@ -1,9 +1,10 @@
-\documentclass[a4paper,12pt,twoside]{jreport} % A4 用紙，12pt フォント
+\documentclass[a4paper,12pt,twoside,dvipdfmx]{jreport} % A4 用紙，12pt フォント
 
 % =========================== use package ================================== %
 \usepackage[inner=25mm,outer=25mm,top=40mm,bottom=25mm]{geometry} % 余白の設定
 \usepackage{titlesec} % 章タイトルのフォーマット
 \usepackage{fancyhdr} % ヘッダーとフッターの設定
+\usepackage{pdfpages} %pdf追加用
 
 \usepackage[japanese]{babel} % 参考文献の表示を「参考文献」にする
 % ========================================================================== %
@@ -44,6 +45,9 @@
 % ================================ document ================================ %
 \begin{document}
 
+\includepdf[pages=-,fitpaper=true]{Other/hyoshi.pdf}
+\cleardoublepage
+
 \begin{titlepage}
     \begin{center}
   
@@ -82,20 +86,20 @@
 % \maketitle
 
 \input{Other/abstract} %abstract追加
+\cleardoublepage
 
 % 目次
 \pagenumbering{roman} % ページ番号をローマ数字に設定
 \setcounter{page}{1}
 \tableofcontents % 目次を生成
-\clearpage % これを入れないと目次のページ番号がローマ数字にならない
-
+\listoffigures %図目次
+\listoftables %表目次
 
 
 % 本文
-\pagenumbering{arabic} % ページ番号をアラビア数字に設定
 \input{Chapter1/Chapter1.tex}
-% \input{Chapter2/Chapter2.tex}
-% \input{Chapter3/Chapter3.tex}
+\input{Chapter2/Chapter2.tex}
+\input{Chapter3/Chapter3.tex}
 % \input{Chapter4/Chapter4.tex}
 % \input{Chapter5/Chapter5.tex}
 
