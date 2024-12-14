@@ -6,4 +6,4 @@ $out_dir = '';
 $aux_dir = 'build';
 $preview_continuous_mode = 0;
 $bibtex_use = 1;  # bibtexを使用する場合
-# $biber_use = 1;  # biberを使用する場合（必要に応じて）
+;$biber_use = 1;  # biberを使用する場合（必要に応じて）
